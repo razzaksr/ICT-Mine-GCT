@@ -9,5 +9,18 @@
         <property name="hibernate.show_sql">true</property>
         <!-- Entity classes -->
         <mapping class="org.hostpital.Student"/>
+        <!-- inheritance and listeners -->
+        <mapping class="org.hostpital.inheritance.Vehicle"/>
+        <mapping class="org.hostpital.inheritance.Car"/>
+        <mapping class="org.hostpital.inheritance.Motorcycle"/>
+        <!-- lock -->
+        <mapping class="org.hostpital.locks.BankAccount" />
+        <!-- Persistence embedded -->
+        <mapping class="org.hostpital.persistence.components.Customer" />
+        <mapping class="org.hostpital.persistence.components.Address" />
+        <!-- Persistence element collection -->
+        <mapping class="org.hostpital.persistence.components.Problem" />
+
+
     </session-factory>
 </hibernate-configuration>

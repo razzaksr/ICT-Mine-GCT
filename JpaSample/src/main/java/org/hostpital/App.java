@@ -12,8 +12,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("demoPU");
-        EntityManager em = emf.createEntityManager();
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("demoPU");
+            EntityManager em = emf.createEntityManager();
 
         // Life cycle
 //        em.getTransaction().begin();
