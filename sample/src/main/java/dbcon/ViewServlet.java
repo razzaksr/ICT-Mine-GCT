@@ -16,7 +16,8 @@ public class ViewServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(true);
         try{
-            List<Cards> customers = new CardService().viewAllCards();
+            // List<Cards> customers = new CardService().viewAllCards();
+            List<Cards> customers = new CardsORM().getAllCards();
 //            System.out.println(customers);
             session.setAttribute("customers", customers);
         }catch (Exception e){e.printStackTrace();}

@@ -1,8 +1,13 @@
 package dbcon;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Cards {
     private String cardHolder;
     private double cardBalance;
+    @Id
     private long cardNumber;
     private String pan;
 

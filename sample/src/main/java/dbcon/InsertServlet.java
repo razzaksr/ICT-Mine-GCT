@@ -32,7 +32,8 @@ public class InsertServlet extends HttpServlet {
         card.setPan("uploads/" + fileName);
 
         try {
-            new CardService().insertCard(card);
+//            new CardService().insertCard(card);
+            new CardsORM().addCard(card);
             response.sendRedirect(getServletContext().getContextPath() + "/cards/show");
         } catch (Exception e) {
             throw new ServletException("Upload failed", e);
